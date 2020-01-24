@@ -1,0 +1,21 @@
+cookie  :  在浏览器端保存的键值对 key value
+
+
+# base64编码方式
+base64:
+a-z A-Z 0-9 + /
+
+1111 1111 1111 1111 1111 1111
+111111 111111 111111 111111
+
+--------xsrf防范（post）----------------
+
+GET
+    1
+    <form method = post>
+        <input type=hidden value='lalala' name=xsrf_token>
+    <form>
+    2. set_cookie(xsrf_token,'lalala')
+
+
+

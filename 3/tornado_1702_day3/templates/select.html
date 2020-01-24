@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    {% for row in rose %}
+        <li>
+            <span>{{row['title']}}</span>
+            <img src="/upload/{{row['pic']}}" width="200" height="200">
+        </li>
+    {% end %}
+</ul>
+</body>
+</html>
